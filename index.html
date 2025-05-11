@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue sur FireLabs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-        }
-    </style>
+    <title>FireLabs - Développement de jeux vidéo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Bienvenue sur le site de FireLabs !</h1>
-    <p>Nous développons des jeux vidéo innovants.</p>
-    <footer>
-        <p>&copy; 2025 FireLabs</p>
-    </footer>
+
+    <!-- Logo FireLabs -->
+    <header>
+        <img src="logo-firelabs.png" alt="Logo FireLabs" class="logo">
+    </header>
+
+    <!-- Bannière avec texte -->
+    <section class="banner">
+        <h1>FireLabs</h1>
+        <p>Nous créons des jeux vidéo innovants et captivants pour tous les joueurs.</p>
+    </section>
+
+    <!-- Carrousel de jeux -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <div class="game-card" style="background-image: url('game1.jpg');">
+                    <h2>Jeu A</h2>
+                    <p>Version 1.0</p>
+                    <a href="https://lien-de-telechargement.com" class="btn-download">Télécharger</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="game-card" style="background-image: url('game2.jpg');">
+                    <h2>Jeu B</h2>
+                    <p>Version 1.2</p>
+                    <a href="https://lien-de-telechargement.com" class="btn-download">Télécharger</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="game-card" style="background-image: url('game3.jpg');">
+                    <h2>Jeu C</h2>
+                    <p>Version 0.9</p>
+                    <a href="https://lien-de-telechargement.com" class="btn-download">Télécharger</a>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
 </body>
 </html>
